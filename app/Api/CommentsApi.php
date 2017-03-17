@@ -18,7 +18,7 @@ class CommentsApi extends BaseApi
     /**
      * @inheritdoc
      */
-    public function create(array $attributes, array $toMany = [])
+    public function create($index, array $attributes, array $toMany = [])
     {
         /** @var AccountManagerInterface $accountManager */
         $accountManager = $this->getContainer()->get(AccountManagerInterface::class);
@@ -27,7 +27,7 @@ class CommentsApi extends BaseApi
         $currentUser = $accountManager->getAccount()->getUser();
         $attributes[Model::FIELD_ID_USER] = $currentUser->{User::FIELD_ID};
 
-        return parent::create($attributes, $toMany);
+        return parent::create($index, $attributes, $toMany);
     }
 
     /**

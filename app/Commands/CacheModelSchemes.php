@@ -5,11 +5,11 @@ use App\Database\Models\ModelInterface;
 use Composer\Script\Event;
 use Config\Database as C;
 use Limoncello\AppCache\CacheScript;
-use Limoncello\ContainerLight\Container;
+use Limoncello\Container\Container;
+use Limoncello\Contracts\Model\RelationshipTypes;
 use Limoncello\Core\Contracts\Config\ConfigInterface;
-use Limoncello\JsonApi\Contracts\Models\ModelSchemesInterface;
-use Limoncello\JsonApi\Models\ModelSchemes;
-use Limoncello\JsonApi\Models\RelationshipTypes;
+use Limoncello\Flute\Contracts\Models\ModelSchemesInterface;
+use Limoncello\Flute\Models\ModelSchemes;
 
 /**
  * @package App

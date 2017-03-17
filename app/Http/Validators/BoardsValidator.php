@@ -22,9 +22,9 @@ class BoardsValidator extends BaseValidator
             Schema::ATTR_TITLE => $this->required($this->name()),
         ];
 
-        list (, $attrCaptures, $toManyCaptures) = $this->assert($schema, $json, $idRule, $attributeRules);
+        list ($idValue, $attrCaptures, $toManyCaptures) = $this->assert($schema, $json, $idRule, $attributeRules);
 
-        return [$attrCaptures, $toManyCaptures];
+        return [$idValue, $attrCaptures, $toManyCaptures];
     }
 
     /**

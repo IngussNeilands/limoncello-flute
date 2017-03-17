@@ -1,21 +1,19 @@
 <?php namespace App\Commands;
 
-use App\Container\SetUpConfig;
+use App\Container\Factory;
 use App\Container\SetUpCrypt;
-use App\Container\SetUpDatabase;
-use App\Container\SetUpLogs;
 use App\Database\MigrationsRunner;
 use App\Database\SeedsRunner;
 use Composer\Script\Event;
 use Doctrine\DBAL\Connection;
-use Limoncello\ContainerLight\Container;
+use Limoncello\Container\Container;
 
 /**
  * @package App
  */
 class Database
 {
-    use SetUpConfig, SetUpCrypt, SetUpDatabase, SetUpLogs;
+    use Factory, SetUpCrypt;
 
     /**
      * @var null|Container
@@ -84,12 +82,9 @@ class Database
     private static function initVariables()
     {
         if (static::$container === null) {
-            $container = new Container();
+            $container = (new static())->createContainer();
 
-            static::setUpConfig($container);
             static::setUpCrypt($container);
-            static::setUpDatabase($container);
-            static::setUpFileLogs($container);
 
             static::$container = $container;
         }

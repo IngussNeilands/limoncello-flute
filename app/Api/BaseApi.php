@@ -8,11 +8,11 @@ use DateTime;
 use Doctrine\DBAL\Query\QueryBuilder;
 use Doctrine\DBAL\Types\Type;
 use Interop\Container\ContainerInterface;
-use Limoncello\JsonApi\Api\Crud;
-use Limoncello\JsonApi\Contracts\Adapters\PaginationStrategyInterface;
-use Limoncello\JsonApi\Contracts\Adapters\RepositoryInterface;
-use Limoncello\JsonApi\Contracts\FactoryInterface;
-use Limoncello\JsonApi\Contracts\Models\ModelSchemesInterface;
+use Limoncello\Flute\Api\Crud;
+use Limoncello\Flute\Contracts\Adapters\PaginationStrategyInterface;
+use Limoncello\Flute\Contracts\Adapters\RepositoryInterface;
+use Limoncello\Flute\Contracts\FactoryInterface;
+use Limoncello\Flute\Contracts\Models\ModelSchemesInterface;
 
 /**
  * @package App

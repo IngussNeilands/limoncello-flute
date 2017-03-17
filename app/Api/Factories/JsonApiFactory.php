@@ -1,11 +1,11 @@
 <?php namespace App\Api\Factories;
 
-use App\Api\Repositories\BaseRepository;
 use Doctrine\DBAL\Connection;
-use Limoncello\JsonApi\Contracts\Adapters\FilterOperationsInterface;
-use Limoncello\JsonApi\Contracts\I18n\TranslatorInterface;
-use Limoncello\JsonApi\Contracts\Models\ModelSchemesInterface;
-use Limoncello\JsonApi\Factory;
+use Limoncello\Flute\Adapters\Repository;
+use Limoncello\Flute\Contracts\Adapters\FilterOperationsInterface;
+use Limoncello\Flute\Contracts\I18n\TranslatorInterface;
+use Limoncello\Flute\Contracts\Models\ModelSchemesInterface;
+use Limoncello\Flute\Factory;
 
 /**
  * @package App
@@ -21,7 +21,7 @@ class JsonApiFactory extends Factory
         FilterOperationsInterface $filterOperations,
         TranslatorInterface $translator
     ) {
-        return new BaseRepository(
+        return new Repository(
             $connection,
             $modelSchemes,
             $filterOperations,

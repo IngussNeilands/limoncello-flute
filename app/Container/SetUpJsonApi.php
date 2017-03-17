@@ -3,26 +3,26 @@
 use App\Api\Factories\JsonApiFactory;
 use App\Exceptions\JsonApiHandler;
 use App\Http\Pagination\PaginationStrategy;
+use App\I18n\En\Validation;
 use Doctrine\DBAL\Connection;
 use Interop\Container\ContainerInterface;
-use Limoncello\ContainerLight\Container;
+use Limoncello\Container\Container;
 use Limoncello\Core\Contracts\Application\ExceptionHandlerInterface;
 use Limoncello\Core\Contracts\Config\ConfigInterface;
-use Limoncello\JsonApi\Adapters\FilterOperations;
-use Limoncello\JsonApi\Config\JsonApiConfig;
-use Limoncello\JsonApi\Contracts\Adapters\PaginationStrategyInterface;
-use Limoncello\JsonApi\Contracts\Adapters\RepositoryInterface;
-use Limoncello\JsonApi\Contracts\Config\JsonApiConfigInterface;
-use Limoncello\JsonApi\Contracts\Encoder\EncoderInterface;
-use Limoncello\JsonApi\Contracts\FactoryInterface;
-use Limoncello\JsonApi\Contracts\Models\ModelSchemesInterface;
-use Limoncello\JsonApi\Contracts\Schema\JsonSchemesInterface;
-use Neomerx\JsonApi\Contracts\Http\Query\QueryParametersParserInterface;
-use Neomerx\JsonApi\Encoder\EncoderOptions;
-use Limoncello\JsonApi\Contracts\I18n\TranslatorInterface;
+use Limoncello\Flute\Adapters\FilterOperations;
+use Limoncello\Flute\Config\JsonApiConfig;
+use Limoncello\Flute\Contracts\Adapters\PaginationStrategyInterface;
+use Limoncello\Flute\Contracts\Adapters\RepositoryInterface;
+use Limoncello\Flute\Contracts\Config\JsonApiConfigInterface;
+use Limoncello\Flute\Contracts\Encoder\EncoderInterface;
+use Limoncello\Flute\Contracts\FactoryInterface;
+use Limoncello\Flute\Contracts\I18n\TranslatorInterface;
+use Limoncello\Flute\Contracts\Models\ModelSchemesInterface;
+use Limoncello\Flute\Contracts\Schema\JsonSchemesInterface;
 use Limoncello\Validation\Contracts\TranslatorInterface as ValidationTranslatorInterface;
 use Limoncello\Validation\I18n\Translator as ValidationTranslator;
-use App\I18n\En\Validation;
+use Neomerx\JsonApi\Contracts\Http\Query\QueryParametersParserInterface;
+use Neomerx\JsonApi\Encoder\EncoderOptions;
 
 // TODO think of moving as much JSON API config trait to json-api lib as possible. Developers are unlikely to change it.
 

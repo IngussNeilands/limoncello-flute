@@ -3,10 +3,10 @@
 use App\Http\Controllers\BaseController;
 use App\Http\Controllers\BoardsController;
 use App\Http\Controllers\CommentsController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\RolesController;
 use App\Http\Controllers\UsersController;
-use App\Http\Controllers\HomeController;
 use App\Schemes\BoardSchema;
 use App\Schemes\PostSchema;
 use App\Schemes\RoleSchema;
@@ -16,8 +16,8 @@ use Limoncello\Core\Contracts\Routing\GroupInterface;
 use Limoncello\Core\Contracts\Routing\RouteInterface as RI;
 use Limoncello\Core\Contracts\Routing\RouteInterface;
 use Limoncello\Core\Routing\Group;
-use Limoncello\JsonApi\Contracts\Http\ControllerInterface;
-use Limoncello\JsonApi\Contracts\Schema\SchemaInterface;
+use Limoncello\Flute\Contracts\Http\ControllerInterface;
+use Limoncello\Flute\Contracts\Schema\SchemaInterface;
 use Neomerx\JsonApi\Contracts\Document\DocumentInterface;
 
 /**

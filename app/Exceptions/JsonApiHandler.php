@@ -7,9 +7,9 @@ use Interop\Container\ContainerInterface;
 use Limoncello\Core\Contracts\Application\ExceptionHandlerInterface;
 use Limoncello\Core\Contracts\Application\SapiInterface;
 use Limoncello\Core\Contracts\Config\ConfigInterface;
-use Limoncello\JsonApi\Contracts\Encoder\EncoderInterface;
-use Limoncello\JsonApi\Contracts\Http\Cors\CorsStorageInterface;
-use Limoncello\JsonApi\Http\JsonApiResponse;
+use Limoncello\Flute\Contracts\Encoder\EncoderInterface;
+use Limoncello\Flute\Contracts\Http\Cors\CorsStorageInterface;
+use Limoncello\Flute\Http\JsonApiResponse;
 use Neomerx\JsonApi\Document\Error;
 use Neomerx\JsonApi\Exceptions\ErrorCollection;
 use Neomerx\JsonApi\Exceptions\JsonApiException;
@@ -94,8 +94,7 @@ class JsonApiHandler implements ExceptionHandlerInterface
         $content = $encoder->encodeErrors($errors);
         /** @var CorsStorageInterface $corsStorage */
         if ($container->has(CorsStorageInterface::class) === true &&
-            ($corsStorage = $container->get(CorsStorageInterface::class)) !== null &&
-            $corsStorage->hasHeaders() === true
+            ($corsStorage = $container->get(CorsStorageInterface::class)) !== null
         ) {
             $corsHeaders = $corsStorage->getHeaders();
         } else {

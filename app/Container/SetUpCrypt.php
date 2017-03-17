@@ -2,7 +2,7 @@
 
 use Config\Crypt as C;
 use Interop\Container\ContainerInterface;
-use Limoncello\ContainerLight\Container;
+use Limoncello\Container\Container;
 use Limoncello\Core\Contracts\Config\ConfigInterface;
 use Limoncello\Crypt\Contracts\HasherInterface;
 use Limoncello\Crypt\Hasher;

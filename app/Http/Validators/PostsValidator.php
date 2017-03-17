@@ -27,10 +27,10 @@ class PostsValidator extends BaseValidator
             Schema::REL_BOARD => $this->required($this->boardId()),
         ];
 
-        list (, $attrCaptures, $toManyCaptures) =
+        list ($idValue, $attrCaptures, $toManyCaptures) =
             $this->assert($schema, $json, $idRule, $attributeRules, $toOneRules);
 
-        return [$attrCaptures, $toManyCaptures];
+        return [$idValue, $attrCaptures, $toManyCaptures];
     }
 
     /**

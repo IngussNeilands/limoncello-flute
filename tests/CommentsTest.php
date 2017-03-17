@@ -1,6 +1,6 @@
 <?php namespace Tests;
 
-use Limoncello\JsonApi\Adapters\PaginationStrategy;
+use Limoncello\Flute\Adapters\PaginationStrategy;
 
 /**
  * @package Tests

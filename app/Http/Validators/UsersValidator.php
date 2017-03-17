@@ -31,10 +31,10 @@ class UsersValidator extends BaseValidator
             Schema::REL_ROLE => $this->required($this->roleId()),
         ];
 
-        list (, $attrCaptures, $toManyCaptures) =
+        list ($idValue, $attrCaptures, $toManyCaptures) =
             $this->assert($schema, $json, $idRule, $attributeRules, $toOneRules);
 
-        return [$attrCaptures, $toManyCaptures];
+        return [$idValue, $attrCaptures, $toManyCaptures];
     }
 
     /**

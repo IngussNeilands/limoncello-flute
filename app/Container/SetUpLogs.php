@@ -1,6 +1,7 @@
 <?php namespace App\Container;
 
 use Config\Application as C;
+use Limoncello\Container\Container;
 use Limoncello\Core\Contracts\Config\ConfigInterface;
 use Monolog\Formatter\LineFormatter;
 use Monolog\Handler\NullHandler;
@@ -9,7 +10,6 @@ use Monolog\Handler\StreamHandler;
 use Monolog\Logger;
 use Monolog\Processor\UidProcessor;
 use Monolog\Processor\WebProcessor;
-use Limoncello\ContainerLight\Container;
 use Psr\Log\LoggerInterface;
 
 /**

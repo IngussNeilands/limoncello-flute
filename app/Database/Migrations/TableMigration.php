@@ -4,8 +4,8 @@ use Closure;
 use Doctrine\DBAL\Schema\AbstractSchemaManager;
 use Doctrine\DBAL\Schema\Table;
 use Doctrine\DBAL\Types\Type;
-use Limoncello\JsonApi\Contracts\Models\ModelSchemesInterface;
-use Limoncello\JsonApi\Models\RelationshipTypes;
+use Limoncello\Contracts\Model\RelationshipTypes;
+use Limoncello\Flute\Contracts\Models\ModelSchemesInterface;
 
 /**
  * @package App

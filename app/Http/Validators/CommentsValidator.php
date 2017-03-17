@@ -25,10 +25,10 @@ class CommentsValidator extends BaseValidator
             Schema::REL_POST => $this->required($this->postId()),
         ];
 
-        list (, $attrCaptures, $toManyCaptures) =
+        list ($idValue, $attrCaptures, $toManyCaptures) =
             $this->assert($schema, $json, $idRule, $attributeRules, $toOneRules);
 
-        return [$attrCaptures, $toManyCaptures];
+        return [$idValue, $attrCaptures, $toManyCaptures];
     }
 
     /**

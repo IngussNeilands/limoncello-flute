@@ -3,7 +3,7 @@
 use App\Database\Models\Model;
 use DateTime;
 use Doctrine\DBAL\Query\QueryBuilder;
-use Limoncello\JsonApi\Contracts\Models\ModelSchemesInterface;
+use Limoncello\Flute\Contracts\Models\ModelSchemesInterface;
 
 /**
  * @package App

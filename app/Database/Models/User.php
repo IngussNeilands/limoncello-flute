@@ -2,7 +2,7 @@
 
 use App\Database\Types\DateTimeType;
 use Doctrine\DBAL\Types\Type;
-use Limoncello\JsonApi\Models\RelationshipTypes;
+use Limoncello\Contracts\Model\RelationshipTypes;
 
 /**
  * @package App

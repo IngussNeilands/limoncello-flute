@@ -1,7 +1,7 @@
 <?php namespace App\Container;
 
 use Interop\Container\ContainerInterface;
-use Limoncello\ContainerLight\Container;
+use Limoncello\Container\Container;
 
 /**
  * @package App

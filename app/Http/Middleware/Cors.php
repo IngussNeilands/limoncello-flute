@@ -1,6 +1,6 @@
 <?php namespace App\Http\Middleware;
 
-use Limoncello\JsonApi\Http\Cors\CorsMiddleware;
+use Limoncello\Flute\Http\Cors\CorsMiddleware;
 
 /**
  * @package App

@@ -2,13 +2,13 @@
 
 use Config\Application;
 use Interop\Container\ContainerInterface;
+use Limoncello\Container\Container;
 use Limoncello\Core\Contracts\Config\ConfigInterface;
-use Limoncello\JsonApi\Contracts\Http\Cors\CorsStorageInterface;
-use Limoncello\JsonApi\Http\Cors\CorsStorage;
+use Limoncello\Flute\Contracts\Http\Cors\CorsStorageInterface;
+use Limoncello\Flute\Http\Cors\CorsStorage;
 use Neomerx\Cors\Analyzer;
 use Neomerx\Cors\Contracts\AnalyzerInterface;
 use Neomerx\Cors\Strategies\Settings;
-use Limoncello\ContainerLight\Container;
 use Psr\Log\LoggerInterface;
 
 /**

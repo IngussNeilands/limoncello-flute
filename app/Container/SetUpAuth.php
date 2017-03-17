@@ -2,7 +2,7 @@
 
 use App\Authentication\AccountManager;
 use App\Authentication\Contracts\AccountManagerInterface;
-use Limoncello\ContainerLight\Container;
+use Limoncello\Container\Container;
 
 /**
  * @package App

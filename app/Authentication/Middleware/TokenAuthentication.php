@@ -5,7 +5,7 @@ use App\Authentication\Contracts\AccountManagerInterface;
 use App\Database\Models\User;
 use Closure;
 use Interop\Container\ContainerInterface;
-use Limoncello\JsonApi\Contracts\Adapters\RepositoryInterface;
+use Limoncello\Flute\Contracts\Adapters\RepositoryInterface;
 use PDO;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;

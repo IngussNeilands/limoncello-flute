@@ -3,10 +3,10 @@
 use App\I18n\ValidationCodes;
 use Doctrine\DBAL\Connection;
 use Interop\Container\ContainerInterface;
-use Limoncello\JsonApi\Contracts\I18n\TranslatorInterface as JsonApiTranslatorInterface;
-use Limoncello\JsonApi\Contracts\Models\ModelSchemesInterface;
-use Limoncello\JsonApi\Contracts\Schema\JsonSchemesInterface;
-use Limoncello\JsonApi\Validation\Validator;
+use Limoncello\Flute\Contracts\I18n\TranslatorInterface as JsonApiTranslatorInterface;
+use Limoncello\Flute\Contracts\Models\ModelSchemesInterface;
+use Limoncello\Flute\Contracts\Schema\JsonSchemesInterface;
+use Limoncello\Flute\Validation\Validator;
 use Limoncello\Validation\Captures\CaptureAggregator;
 use Limoncello\Validation\Contracts\RuleInterface;
 use Limoncello\Validation\Contracts\TranslatorInterface as ValidationTranslatorInterface;

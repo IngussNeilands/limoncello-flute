@@ -4,7 +4,7 @@ use App\Container\SetUpConfig;
 use Composer\Script\Event;
 use Config\Core;
 use Limoncello\AppCache\CacheScript;
-use Limoncello\ContainerLight\Container;
+use Limoncello\Container\Container;
 use Limoncello\Core\Contracts\Config\ConfigInterface;
 
 /**

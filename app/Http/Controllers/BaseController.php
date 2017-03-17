@@ -6,14 +6,14 @@ use App\Container\SetUpJsonApi;
 use App\Http\Validators\BaseValidator;
 use App\Schemes\BaseSchema;
 use Interop\Container\ContainerInterface;
-use Limoncello\ContainerLight\Container;
+use Limoncello\Container\Container;
 use Neomerx\JsonApi\Contracts\Document\DocumentInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
 /**
  * @package App
  */
-abstract class BaseController extends \Limoncello\JsonApi\Http\BaseController
+abstract class BaseController extends \Limoncello\Flute\Http\BaseController
 {
     use SetUpAuth, SetUpCrypt, SetUpJsonApi;
 

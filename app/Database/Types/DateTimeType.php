@@ -1,6 +1,6 @@
 <?php namespace App\Database\Types;
 
-use Limoncello\JsonApi\Types\DateTimeJsonApiStringType;
+use Limoncello\Flute\Types\DateTimeJsonApiStringType;
 
 /**
  * @package App

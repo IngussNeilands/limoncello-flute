@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\UsersController;
 use Doctrine\DBAL\Connection;
-use Limoncello\ContainerLight\Container;
+use Limoncello\Container\Container;
 use Limoncello\Testing\PhpUnitTestCase;
 use Limoncello\Testing\Sapi;
 use Mockery;

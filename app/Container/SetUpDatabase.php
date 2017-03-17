@@ -7,10 +7,10 @@ use Doctrine\DBAL\Connection;
 use Doctrine\DBAL\DriverManager;
 use Doctrine\DBAL\Types\Type;
 use Interop\Container\ContainerInterface;
-use Limoncello\ContainerLight\Container;
+use Limoncello\Container\Container;
 use Limoncello\Core\Contracts\Config\ConfigInterface;
-use Limoncello\JsonApi\Contracts\Models\ModelSchemesInterface;
-use Limoncello\JsonApi\Models\ModelSchemes;
+use Limoncello\Flute\Contracts\Models\ModelSchemesInterface;
+use Limoncello\Flute\Models\ModelSchemes;
 
 /**
  * @package App

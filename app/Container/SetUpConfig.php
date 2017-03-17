@@ -3,7 +3,7 @@
 use App\Commands\CacheConfig as CC;
 use Config\Core;
 use Dotenv\Dotenv;
-use Limoncello\ContainerLight\Container;
+use Limoncello\Container\Container;
 use Limoncello\Core\Config\ArrayConfig;
 use Limoncello\Core\Config\ConfigManager;
 use Limoncello\Core\Contracts\Config\ConfigInterface;

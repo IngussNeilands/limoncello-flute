@@ -5,7 +5,7 @@ use App\Database\Models\User as Model;
 use App\Database\Models\User;
 use App\Schemes\UserSchema as Schema;
 use Limoncello\Crypt\Contracts\HasherInterface;
-use Limoncello\JsonApi\Contracts\Adapters\RepositoryInterface;
+use Limoncello\Flute\Contracts\Adapters\RepositoryInterface;
 use PDO;
 
 /**
@@ -26,7 +26,7 @@ class UsersApi extends BaseApi
     /**
      * @inheritdoc
      */
-    public function create(array $attributes, array $toMany = [])
+    public function create($index, array $attributes, array $toMany = [])
     {
         // in attributes were captured validated input password we need to convert it into password hash
 
@@ -37,7 +37,7 @@ class UsersApi extends BaseApi
         $hasher = $this->getContainer()->get(HasherInterface::class);
         $attributes[Model::FIELD_PASSWORD_HASH] = $hasher->hash($password);
 
-        return parent::create($attributes, $toMany);
+        return parent::create($index, $attributes, $toMany);
     }
 
     /**

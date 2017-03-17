@@ -2,12 +2,12 @@
 
 use App\Exceptions\JsonApiHandler;
 use Config\Application;
-use Limoncello\ContainerLight\Container;
+use Limoncello\Container\Container;
 use Limoncello\Core\Contracts\Application\SapiInterface;
 use Limoncello\Core\Contracts\Config\ConfigInterface;
-use Limoncello\JsonApi\Contracts\Encoder\EncoderInterface;
-use Limoncello\JsonApi\Contracts\Http\Cors\CorsStorageInterface;
-use Limoncello\JsonApi\Http\Cors\CorsStorage;
+use Limoncello\Flute\Contracts\Encoder\EncoderInterface;
+use Limoncello\Flute\Contracts\Http\Cors\CorsStorageInterface;
+use Limoncello\Flute\Http\Cors\CorsStorage;
 use LogicException;
 use Mockery;
 use Mockery\Mock;

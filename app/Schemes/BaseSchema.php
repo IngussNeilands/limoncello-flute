@@ -1,7 +1,7 @@
 <?php namespace App\Schemes;
 
 use App\Database\Models\Model;
-use Limoncello\JsonApi\Schema\Schema;
+use Limoncello\Flute\Schema\Schema;
 
 /**
  * @package App

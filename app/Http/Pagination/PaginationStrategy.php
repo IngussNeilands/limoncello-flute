@@ -3,7 +3,7 @@
 /**
  * @package App
  */
-class PaginationStrategy extends \Limoncello\JsonApi\Adapters\PaginationStrategy
+class PaginationStrategy extends \Limoncello\Flute\Adapters\PaginationStrategy
 {
     /**
      * @inheritdoc

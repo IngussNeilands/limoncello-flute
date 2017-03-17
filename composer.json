@@ -13,20 +13,21 @@
         }
     ],
     "require": {
-        "php": ">=5.6.0",
+        "php": ">=7.0.0",
         "monolog/monolog": "^1.18",
-        "limoncello-php/framework": "^0.4.0",
-        "limoncello-php/templates": "^0.2.0",
-        "limoncello-php/json-api": "^0.3.0",
-        "limoncello-php/auth": "^0.1.0",
-        "vlucas/phpdotenv": "^2.4"
+        "vlucas/phpdotenv": "^2.4",
+        "limoncello-php/contracts": "^0.5.0",
+        "limoncello-php/crypt": "^0.5.0",
+        "limoncello-php/templates": "^0.5.0",
+        "limoncello-php/flute": "^0.5.0",
+        "limoncello-php/auth": "^0.5.0"
     },
     "require-dev": {
         "filp/whoops": "^2.1",
-        "limoncello-php/testing": "^0.1.0",
+        "limoncello-php/testing": "^0.2.0",
         "squizlabs/php_codesniffer": "^2.7",
         "composer/composer": "^1.0",
-        "phpunit/phpunit": "^4.0 || ^5.0",
+        "phpunit/phpunit": "^5.0",
         "mockery/mockery": "^0.9.5",
         "fzaninotto/faker": "^1.6",
         "phpmd/phpmd" : "@stable"
@@ -80,5 +81,6 @@
         "test-cs": "./vendor/bin/phpcs -p -s --standard=PSR2 ./app ./tests",
         "test-md": "./vendor/bin/phpmd ./app text codesize,controversial,cleancode,design,unusedcode,naming",
         "ab-home": "ab -c 10 -t 5 http://127.0.0.1:8080/"
-    }
+    },
+    "minimum-stability": "dev"
 }

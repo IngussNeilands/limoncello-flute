@@ -13,7 +13,7 @@ use Doctrine\DBAL\Types\Type;
 use Faker\Factory;
 use Faker\Generator;
 use Interop\Container\ContainerInterface;
-use Limoncello\ContainerLight\Container;
+use Limoncello\Container\Container;
 
 /**
  * @package App

@@ -2,7 +2,7 @@
 
 use App\Container\SetUpTemplates;
 use Interop\Container\ContainerInterface;
-use Limoncello\ContainerLight\Container;
+use Limoncello\Container\Container;
 use Limoncello\Templates\Contracts\TemplatesInterface;
 use Psr\Http\Message\ResponseInterface;
 use Zend\Diactoros\Response;

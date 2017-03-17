@@ -3,8 +3,8 @@
 use App\Http\Controllers\BaseController;
 use App\Schemes\BaseSchema;
 use Limoncello\Core\Config\ArrayConfig;
-use Limoncello\JsonApi\Config\JsonApiConfig;
-use Limoncello\JsonApi\Contracts\Config\JsonApiConfigInterface;
+use Limoncello\Flute\Config\JsonApiConfig;
+use Limoncello\Flute\Contracts\Config\JsonApiConfigInterface;
 use ReflectionClass;
 
 /**
