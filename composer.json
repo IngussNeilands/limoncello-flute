@@ -29,7 +29,7 @@
         "composer/composer": "^1.0",
         "phpunit/phpunit": "^5.0",
         "mockery/mockery": "^0.9.5",
-        "fzaninotto/faker": "^1.6",
+        "fzaninotto/faker": "dev-master",
         "phpmd/phpmd" : "@stable"
     },
     "autoload": {
@@ -81,6 +81,5 @@
         "test-cs": "./vendor/bin/phpcs -p -s --standard=PSR2 ./app ./tests",
         "test-md": "./vendor/bin/phpmd ./app text codesize,controversial,cleancode,design,unusedcode,naming",
         "ab-home": "ab -c 10 -t 5 http://127.0.0.1:8080/"
-    },
-    "minimum-stability": "dev"
+    }
 }
