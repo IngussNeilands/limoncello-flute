@@ -4,6 +4,7 @@ use App\Application;
 use Closure;
 use Interop\Container\ContainerInterface;
 use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
 
 /**
  * This is wrapper for the application which adds additional features such as events.
@@ -66,7 +67,7 @@ class AppWrapper extends Application
     /**
      * @inheritdoc
      */
-    protected function handleRequest(Closure $handler, RequestInterface $request = null)
+    protected function handleRequest(Closure $handler, RequestInterface $request = null): ResponseInterface
     {
         $this->dispatchEvent(self::EVENT_ON_HANDLE_REQUEST, [$request]);
 
